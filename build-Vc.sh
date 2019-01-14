@@ -10,6 +10,7 @@ fi
 cd Vc
 git fetch --all --tags --prune
 git checkout tags/1.4.1
+rm -rf build
 mkdir -p build
 cd build
 $HOME/opt/cmake/bin/cmake -DCMAKE_INSTALL_PREFIX=$HOME/opt/Vc -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF ../
